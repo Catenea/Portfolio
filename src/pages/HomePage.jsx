@@ -53,9 +53,9 @@ export default function HomePage(props) {
                     </Row>
                 </div>
                 <SlideRoutes location={location} duration={400}>
-                    <Route path="/me/about" component={MainSection} exact />
-                    <Route path="/me/projects" component={ProjectsPage} exact />
-                    <Route path="/me/info" component={AboutMe} exact />
+                    <Route path="/" component={MainSection} exact />
+                    <Route path="/projects" component={ProjectsPage} exact />
+                    <Route path="/info" component={AboutMe} exact />
                 </SlideRoutes>
                 </div>
             </div>

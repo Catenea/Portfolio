@@ -1,5 +1,5 @@
 import { createBrowserHistory } from "history";
-import {Router, Switch, Route} from "react-router-dom"
+import {Router, Switch, Route, HashRouter} from "react-router-dom"
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -9,11 +9,9 @@ var hist = createBrowserHistory();
 function App() {
   return (
     <div className="App">
-      <Router history={hist}>
-          <Route path="/contact" component={ContactPage}/>
+      <HashRouter history={hist}>
           <Route path="/" component={HomePage}/>
-          <Route path="/projects" component={ProjectsPage}/>
-      </Router>
+      </HashRouter>
     </div>
   );
 }

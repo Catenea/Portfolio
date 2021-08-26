@@ -17,7 +17,7 @@ export default function MainSection() {
     const { Title } = Typography;
 
     const routeChange = (route) =>{ 
-        let path = `/me/${route}`; 
+        let path = `/${route}`; 
         history.push(path);
     }
 
