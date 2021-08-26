@@ -63,7 +63,7 @@ export default function AboutMe() {
                 <Row gutter={16} style={{marginBottom: "30px"}}>
                     <Col span={8}>
                         <Card title="API REST" bordered={true}>
-                        Development and management of APIs using Django
+                        Development and management of APIs using Django, FastApi, Alembic
                         </Card>
                     </Col>
                     <Col span={8}>
