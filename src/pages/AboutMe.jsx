@@ -1,7 +1,11 @@
-import { Col, Row, Card, Divider, List, Progress } from 'antd'
+import { Col, Row, Card, Divider, List, Progress, Button } from 'antd'
 import React from 'react'
+import { ArrowDownOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import { useHistory } from "react-router-dom";
 
 export default function AboutMe() {
+
+    const history = useHistory();
 
     const programmingLanguages = [
         {
@@ -37,10 +41,22 @@ export default function AboutMe() {
         }
       ];
 
+    const routeChange = () =>{ 
+        let path = `/`; 
+        history.push(path);
+    }
+
     return (
         <div>
             <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
             <div style={{width: "100%"}}>
+            <Row  justify="start" gutter={[16, 16]} style={{ width: "100%", marginTop: "40px", height: "20px"}} >
+            <Col span={4}>
+                <Button onClick={routeChange} style={{fontSize: "20px", height: "40px", marginLeft: "20px"}} icon={<ArrowDownOutlined />}>Go Back</Button>
+            </Col>
+            <Col span={10}>
+            </Col>
+            </Row>
             <Row  gutter={[16, 16]} style={{ width: "100%",  marginBottom: "20px"}} >
                 <Col span={16} style={{ paddingTop: "40px"}} >
                 <Divider orientation="left">Skills</Divider>

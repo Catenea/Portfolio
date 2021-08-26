@@ -52,7 +52,7 @@ export default function HomePage(props) {
                         </Col>
                     </Row>
                 </div>
-                <SlideRoutes location={location} duration={400}>
+                <SlideRoutes location={location} duration={400} animation="vertical-slide">
                     <Route path="/" component={MainSection} exact />
                     <Route path="/projects" component={ProjectsPage} exact />
                     <Route path="/info" component={AboutMe} exact />
