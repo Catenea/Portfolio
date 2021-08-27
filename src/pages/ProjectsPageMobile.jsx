@@ -19,8 +19,7 @@ export default function ProjectsPageMobile() {
 
     const routeChange = () =>{ 
         let path = `/`; 
-        console.log(path)
-        // history.push(path);
+        history.push(path);
     }
 
     return (

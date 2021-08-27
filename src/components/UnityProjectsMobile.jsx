@@ -8,7 +8,7 @@ export default function UnityProjectsMobile(props) {
     return (
         <Row gutter={[16, 16]} style={{marginTop: "20px", marginBottom: "100px"}}>
             <div style={{width: "100%",textAlign: "center"}}>
-            <h1>BREATHE: MSBR App</h1>
+            <h1>BREATHE: MSBR</h1>
                 </div>
         <Col span={20} >
         <Carousel autoplay style={{ width: "220px"}}>

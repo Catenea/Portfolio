@@ -16,6 +16,7 @@ import ProjectsPage from './ProjectsPage'
 import AboutMe from './AboutMe'
 import MainSectionMobile from '../components/MainSectionMobile'
 import ProjectsPageMobile from './ProjectsPageMobile'
+import AboutMeMobile from './AboutMeMobile'
 
 export default function HomePageMobile(props) {
 
@@ -33,7 +34,7 @@ export default function HomePageMobile(props) {
                 <SlideRoutes location={location} duration={400} animation="vertical-slide">
                     <Route path="/" component={MainSectionMobile} exact />
                     <Route path="/projects" component={ProjectsPageMobile} exact />
-                    <Route path="/info" component={AboutMe} exact />
+                    <Route path="/info" component={AboutMeMobile} exact />
                 </SlideRoutes>
                 </div>
             </div>
